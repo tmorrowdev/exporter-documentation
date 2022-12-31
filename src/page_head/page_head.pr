@@ -1,6 +1,6 @@
 {* Retrieve page object from context *}
-{[ let page = 'result' /]}
-{[ const domain = ds.documentationDomain() /]}
+{[ let page = context /]}
+{[ const domain = {{'/result/'}} /]}]
 {[ const configuration = exportConfiguration() /]}
 <head>
     {* SEO *}

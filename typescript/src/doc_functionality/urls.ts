@@ -88,7 +88,7 @@ export function rootUrl(asset: string, prefix: string | undefined) {
   let fragments = [prefix, asset]
 
   // Retrieve url-safe path constructed as [host][asset-slug]
-  let path = fragments.join("/")
+  let path = fragments.join("/result/")
   return path
 }
 

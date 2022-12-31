@@ -55,7 +55,7 @@ module.exports = (env, argv) => ({
   resolve: { extensions: ['.tsx', '.ts', '.jsx', '.js'] },
 
   output: {
-    publicPath: '',
+    publicPath: '/result/',
     filename: '[name].js',
     path: path.resolve(__dirname, './')
   },

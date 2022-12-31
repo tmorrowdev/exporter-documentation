@@ -6,7 +6,7 @@
 <!DOCTYPE HTML>
  
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="1; url={{ url }}">
+<meta http-equiv="refresh" content="1; url={{ '/result/'+url }}">
 {* SEO *}
 {[ inject "page_seo" context page /]}
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,5 +14,5 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&;800display=swap" rel="stylesheet">
  
 <script>
-  window.location.href = "{{ url }}"
+  window.location.href = "{{ '/result/'+url }}"
 </script>

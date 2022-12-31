@@ -95,6 +95,7 @@ export function rootUrl(asset: string, prefix: string | undefined) {
 /** Create proper url that changes with the folder-depth of the documentation */
 export function assetUrl(asset: string, prefix: string | undefined) {
   let assetFolder = "assets"
+  let prefix= "result"
   let fragments = [prefix, assetFolder, asset]
 
   // Retrieve url-safe path constructed as [host][asset-folder][asset-slug]

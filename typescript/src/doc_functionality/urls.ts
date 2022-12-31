@@ -85,10 +85,11 @@ export function pageIdentifier(object: DocumentationPage | DocumentationGroup) {
 
 /** Create proper url that changes with the folder-depth of the documentation */
 export function rootUrl(asset: string) {
+  let prefix= "result"
   let fragments = [prefix, asset]
 
   // Retrieve url-safe path constructed as [host][asset-slug]
-  let path = fragments.join("/result/")
+  let path = fragments.join("/")
   return path
 }
 

@@ -84,7 +84,7 @@ export function pageIdentifier(object: DocumentationPage | DocumentationGroup) {
 }
 
 /** Create proper url that changes with the folder-depth of the documentation */
-export function rootUrl(asset: string, prefix: string | undefined) {
+export function rootUrl(asset: string) {
   let fragments = [prefix, asset]
 
   // Retrieve url-safe path constructed as [host][asset-slug]
